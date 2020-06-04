@@ -1,0 +1,160 @@
+
+.shadow2:hover {
+	-webkit-filter: drop-shadow(0 0 50px rgba(131, 186, 35, .9));
+	  filter: drop-shadow( 0 0 50px rgba(131, 186, 35, .9));
+}
+
+.chasis{
+	fill:#a8a9a8;
+	position: absolute;
+}.chasis2{
+	fill:#949594;
+	position: absolute;
+}
+
+
+.inwheel{
+	fill: #9dac6c;
+}.outwheel{
+	fill:#252524;
+}
+
+
+.handl1{
+	fill:#a8a9a8;
+	}.handl2{
+		fill:#949594;
+	}.handl3{
+		fill:#9dac6c;
+	}.handl4{
+		fill:#575955;
+	}.handl5{
+		fill:#252524;
+	}
+.handl22{
+fill:#252524;
+}
+
+.jog0{
+	fill:#949594
+}.jog1{
+	fill: #9dac6c;
+}.jog2{
+	fill: #575955;
+}.jog3{
+	fill:#252524;
+}.jog0:hover,.jog1:hover,.jog2:hover,.jog3:hover{
+	fill: blue;
+}
+
+
+.seat{
+	fill:#252524;
+}.seat:hover{
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in; 
+}
+
+#svg-box-content-base {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+#svg-box-content-chasis{
+    position: absolute;
+    top: 0;
+    z-index: 6;
+}
+#svg-box-content-jog {
+    position: absolute;
+    top: 0;
+    z-index: 7;
+}
+#svg-box-content-seat{
+    position: absolute;
+    top: 0;
+    z-index: 8;
+}
+#svg-box-content-handl1{
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+#svg-box-content-handl2{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+.svg-box {
+    width: 120%;
+    padding-top: 45%; /* Aspect ratio */ 
+    top: 0vh;
+    position: relative;
+}.svg-box-content {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    z-index: -5;
+}
+.bikez{
+	top: 0;
+	width: 85%;
+    position: absolute;
+    bottom: -6%;
+}
+
+
+
+.databox{
+	left: 30vh;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in; 
+}
+
+.hydro{
+  position: relative;
+  width: 150%;
+  left: -40%;
+}
+.hydrow{
+  position: relative;
+  width: 200%;
+  
+}
+.insticon{
+  padding-top: 40%;
+  max-height: 150px;
+}
+
+
+@media(max-width:768px){
+	.databox{
+		left: 30vh;
+		padding-bottom: 3vh;
+		-moz-transition: all 0.2s ease-in;
+		-o-transition: all 0.2s ease-in;
+		-webkit-transition: all 0.2s ease-in;
+		transition: all 0.2s ease-in; 
+	}
+}
+
+@media (max-width: 992px) {
+	.insticon{
+		opacity: 0;
+		height: 0;
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 577px) {
+	.hydrow{
+	  position: relative;
+	  width: 200%;
+	  padding-top: 70px;
+	}
+}

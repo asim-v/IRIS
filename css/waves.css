@@ -1,0 +1,102 @@
+.header {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-image: linear-gradient(to right, #e8e8e8 0%, #b5b5b5 100%);
+  height: 20vh;
+  -webkit-perspective: 400px;
+  -ms-perspective: 400px;
+  perspective: 400px;
+  color: white;
+  display: flex;
+  z-index: -10;
+}
+.header .waves {
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  left: 0px;
+  overflow: hidden;
+  height: 8.6vw;
+  z-index: -15;
+}
+.header .waves svg {
+  position: absolute;
+  left: 0px;
+  width: calc(100% + 50px);
+  bottom: 0px;
+  border-width: 0;
+}
+.header .waves svg.small-opacity {
+  opacity: 0.3;
+}
+
+.waves2{
+  transform: scaleX(-1);
+}
+
+.separator
+{
+    position: absolute;
+    z-index: 1;
+    top: auto;
+    right: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 150px;
+
+    transform: translateZ(0);
+    pointer-events: none;
+}
+.separator svg
+{
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.separator-top
+{
+    top: 0;
+    bottom: auto;
+}
+.separator-top svg
+{
+    top: 0;
+}
+
+.separator-bottom
+{
+    top: auto;
+    bottom: 0;
+}
+.separator-bottom svg
+{
+    bottom: 0;
+}
+
+.separator-inverse
+{
+    transform: rotate(180deg);
+}
+
+.separator-skew
+{
+    height: 60px;
+}
+
+@media (max-width: 992px)
+{
+    .separator-skew
+    {
+        z-index: 0;
+    }
+}
+.fill-white
+{
+    fill: #ededed;
+}

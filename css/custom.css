@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  
+  width: 100%;
+  height: 100vh;
+ 
+  background: #d4d6d6;
+  background-image: linear-gradient(rgba(252, 252, 252, .7) .1em, transparent .1em), linear-gradient(90deg, rgba(252, 252, 252, .7) .1em, transparent .1em);
+  background-size: 3em 3em;
+}
+html{
+  overflow-y: hidden;
+}
+.imgLoader {
+  display: none;
+  opacity: 0 !important;
+}
+
+.pricebox span {
+  font-size: 30px;
+  color: orange;
+}
+
+.ui.items .item.active {
+  border: 3px solid red;
+}
+.footer{
+	position: absolute;
+	bottom: 0;
+}
+.canvas{
+	width: 100%;
+}
+.gradientic{
+	background: rgb(0,18,255);
+	background: linear-gradient(225deg, rgba(0,18,255,1) 0%, rgba(255,0,78,1) 100%);	
+}
+.transparent{
+	background-color: rgba(200,0,0,.1);
+}
