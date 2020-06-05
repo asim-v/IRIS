@@ -24,7 +24,7 @@
 .header .waves svg {
   position: absolute;
   left: 0px;
-  width: calc(100% + 50px);
+  width: calc(100% + 100px);
   bottom: 0px;
   border-width: 0;
 }
@@ -98,5 +98,5 @@
 }
 .fill-white
 {
-    fill: #ededed;
+    fill: white;
 }

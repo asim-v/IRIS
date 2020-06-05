@@ -40,27 +40,27 @@
 <body id="page-top">
 
   <!--/ Nav Star /-->
-<nav class="navbar navbar-c navbar-trans navbar-expand-md fixed-top" id="mainNav" style="height: 10%;box-shadow: none;text-shadow: none; border-style:none;">
-    <div class="container" style="background-color: white;">
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
       <a class="navbar-brand js-scroll" href="index.html">
-       <e class="a centerr el-sm"><img src="img/svg.svg" height="40px" style="filter:invert(80%) blur(0.4px);">&nbsp;IRIS</e></a>
+	     <e class="a centerr el-sm"><img src="img/svg.svg" height="40px">&nbsp;IRIS</e></a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span style="background-color: black"></span>
-        <span style="background-color: black"></span>
-        <span style="background-color: black"></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Productos
+            Desarrollo
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="balam.html">Balam</a>
-            <a class="dropdown-item" href="hydro.html">Hydro</a>
-            <a class="dropdown-item" href="fireflies/index.html">Fireflies</a>
-            <a class="dropdown-item" href="fireflies/index.html">Navek</a>
+            <a class="dropdown-item" href="#balam">Balam</a>
+            <a class="dropdown-item" href="#hydro">Hydro</a>
+            <a class="dropdown-item" href="#fireflies">Fireflies</a>
+            <a class="dropdown-item" href="#navek">Navek</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -68,7 +68,7 @@
             Servicios
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="autom.html#">Automatización de procesos</a>
+            <a class="dropdown-item" href="autom.html">Automatización de procesos</a>
             <a class="dropdown-item" href="design.html#">Diseño 3D</a>
             <a class="dropdown-item" href="webdev.html#">Desarrollo Web</a>
             <a class="dropdown-item" href="simul.html#">Simulación de sistemas</a>
@@ -76,7 +76,7 @@
           </div>
         </li>         
           <li class="nav-item">
-            <a class="nav-link js-scroll" href='#blog' href="blog-view.html">Blog</a>
+            <a class="nav-link js-scroll" href="blog.html">Blog</a>
           </li>   
           <!--/
           <li class="nav-item">
@@ -86,22 +86,51 @@
         </ul>
       </div>
     </div>
-    <link rel="stylesheet" href="css/wtchstyle.css">
   </nav>
+    
   <!--/ Nav End /-->
 <link rel="stylesheet" href="css/wtchstyle.css">
-
-<section  class="sect pt-4" >
-    <div class="container-fluid relative sect-pt4" >
-      <div class="row"  lazy="loaded" >
-        <div class="col-1"></div>
-        <div class="col-7">
-          <div class="row h-25">
-            <div class="title-box text">
-              <h3 class="title-aa sect-pt4">Hydro</h3> 
-              <div class="line-mf" style="width: 50%;height: 6%;"></div>
+<section class="about-mf route" id="hydro">
+    <div class="container-fluid relative">
+      <div class="row" style="background-image: url('img/maxresdefault.jpg');background-repeat: no-repeat;background-size:cover">
+        <div class="container">
+          <div class="col-sm-12">
+            <div class="row" style="padding-top:15vh;margin-bottom: 10%">
+              <div class="col-lg-4">
+                <div class="row">
+                  <div class="title-box text">
+                    <p class="subtitle-a" style="color: #c3d58a">Introduciendo</p>
+                    <h3 class="title-a" style="color: white;text-shadow: 3px 3px grey">Hydro </h3> 
+                    <div class="line-mf" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div data-aos="fade-up" data-aos-delay="150">
+                    <div class="subtitle-b" style="text-shadow: 1px 1px #000;color: white">
+                      Hydro redefine el concepto de bicicleta con su transmisión <b>hidráulica</b> y sistema <b>inteligente</b>, ofrece una perspectiva fresca en el ciclismo de alto rendimiento. 
+                    </div>
+                  </div>
+                </div>
+            </div>  
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="150">
+                  <div class="col-lg offset-md-1">
+                      <img src="img/img1.png" class="bike">
+                  </div>        
+            </div>            
             </div>
           </div>
+      </div>
+      </div>
+    </div>
+   
+</section>
+
+    
+<section  class="sect" >
+    <div class="container-fluid relative sect-pt4" >
+      <div class="row"  lazy="loaded"  style="height: 20vh">
+        <div class="col-1"></div>
+        <div class="col-7">
         </div>
 	        <div class="col-1"><img src="img/14.png" class="img-fluid insticon"></div>
 	        <div class="col-1"><img src="img/hydrologo.png" class="img-fluid insticon"></div>
@@ -124,7 +153,7 @@
                 </div>
               </div>                                              
               <div class="col-md">
-                <img src="img/side.png" class="img-fluid bike"  style="position:absolute;width:115%;max-width: none">
+                <img src="img/side.png" class="img-fluid bike"  style="position:absolute;width:115%;max-width: none;-webkit-box-reflect: below -40% -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.1)));">
 
               <div class="svg-box ">
 <script src="js/smartconvert.js"></script>
@@ -902,44 +931,6 @@
 </section>
 
 
-<div class="header">
-
-  <div class="waves" >
-    <svg id="wave-1"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1349 43.2" xml:space="preserve" >
-      <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1;"></stop>
-        <stop offset="100%" style="stop-color:#b5b5b5;stop-opacity:1;"></stop>
-      </lineargradient>
-      <path id="wave" fill="url(#grad1)" d="M314.1,0.4C186.8,0.4,0,43.2,0,43.2h1350C1350,43.2,484.9,0.4,314.1,0.4" d-from="M1133,0.4C1005.7,0.4,0,43.2,0,43.2h1350C1350,43.2,1303.8,0.4,1133,0.4" d-to="M217,0.4C89.7,0.4,0,43.2,0,43.2h1350C1350,43.2,387.8,0.4,217,0.4"></path>
-    </svg>
-    <svg class="small-opacity" id="wave-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1349 56.49" xml:space="preserve">
-      <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1;"></stop>
-        <stop offset="100%" style="stop-color:#b5b5b5;stop-opacity:1;"></stop>
-      </lineargradient>
-      <path id="wave" fill="url(#grad1)" d="M757,0.9C629.7,0.9,0,56.6,0,56.6h1350C1350,56.6,927.8,0.9,757,0.9" d-from="M1109,0.9C981.7,0.9,0,56.6,0,56.6h1350C1350,56.6,1279.8,0.9,1109,0.9" d-to="M242.3,0.9C115,0.9,0,56.6,0,56.6h1350C1350,56.6,413.1,0.9,242.3,0.9"></path>
-    </svg>
-    <svg class="small-opacity" id="wave-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1349 93.66" xml:space="preserve">
-      <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1;"></stop>
-        <stop offset="100%" style="stop-color:#b5b5b5;stop-opacity:1;"></stop>
-      </lineargradient>
-      <path id="wave" fill="url(#grad1)" d="M963.7,1.2C836.4,1.2,0,93.7,0,93.7h1350C1350,93.7,1134.5,1.2,963.7,1.2" d-from="M215,1.2C87.7,1.2,0,93.7,0,93.7h1350C1350,93.7,385.8,1.2,215,1.2" d-to="M1148,1.2C1020.7,1.2,0,93.7,0,93.7h1350C1350,93.7,1318.8,1.2,1148,1.2"></path>
-    </svg>
-    <svg class="small-opacity" id="wave-4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1349 56.49" xml:space="preserve">
-      <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1;"></stop>
-        <stop offset="100%" style="stop-color:#b5b5b5;stop-opacity:1;"></stop>
-      </lineargradient>
-      <path id="wave" fill="url(#grad1)" d="M1174,0.9C1046.7,0.9,0,56.6,0,56.6h1350C1350,56.6,1344.8,0.9,1174,0.9" d-from="M173,0.9C45.7,0.9,0,56.6,0,56.6h1350C1350,56.6,343.8,0.9,173,0.9" d-to="M1150,0.9C1022.7,0.9,0,56.6,0,56.6h1350C1350,56.6,1320.8,0.9,1150,0.9"></path>
-    </svg>
-  </div>
-      <div class="separator separator-bottom separator-skew">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-        </svg>
-      </div>
-</div>
 
 
 
@@ -958,8 +949,8 @@
         <div class="row h-50">
           <div class="col-lg-1"></div><div class="col-lg">
             <div class="subtitle-b">
-              <b>Lorem ipsum dolor sit amet</b><br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              <b>Nuestro sistema hidráulico</b><br><br>
+              Cambia tu idea de pedealeo, no empujas una cadena o un motor, sino una bomba hidráulica que facilita por mucho el empuje, mejorando la utilziación energética, sincronizado con tu teléfono todo el tiempo
             </div>
           </div><div class="col-lg-1"></div>
         </div>
@@ -972,8 +963,8 @@
         <div class="row h-25">
           <div class="col-lg-1"></div><div class="col-lg">
             <div class="subtitle-b">
-              <b>Lorem ipsum dolor sit amet</b><br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              <b>El sistema de ruedas inteligente</b><br>
+              Utilizamos algoritmos de procesamiento de imágenes de punta combinado con sensores avanzados para determinar el desgaste de las ruedas en tiempo real, que tus ruedas no
             </div>
           </div><div class="col-lg-1"></div>
         </div>

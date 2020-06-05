@@ -114,7 +114,7 @@ window.onload = function () {
 	document.addEventListener('mousemove', function checkHover() {
 		ConnectChasis('#000000','<div class="subtitle-b"><b>Chasis Hydro.</b></div>No es solo un marco, es una pieza de arte + tecnología que te llevará a otro nivel.');
 		ConnectJog('#743dff','<div class="subtitle-b"><b>Manubrio con control inteligente.</b></div>No es solamente un manillar, sino que gracias al reconocimiento de imágenes incorporado, es la conexión perfecta entre el camino y tu próxima aventura');
-		ConnectHandles('#000000','<div class="subtitle-b"><b>Bases de fibra de carbono.</b></div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam maecenas ultricies mi eget. Pharetra magna ac placerat vestibulum lectus.');
+		ConnectHandles('#000000','<div class="subtitle-b"><b>Bases de fibra de carbono.</b></div>Los soportes de amortiguadores basados en fibra de carbono, mantienen estabilidad y seguridad en todo momento.');
 		ConnectSeat('#000000','<div class="subtitle-b"><b>Asiento ajustable remplazable.</b></div>Simplemente la comodidad necesaria para tus km de viaje.');
 		ConnectInWheel('#000000','<div class="subtitle-b"><b>Sistema de ruedas inteligente sin radios.</b></div>Sin rines! No es un error, el diseño con arquitectura de fibra de carbono, y la estructura inteligente con amortiguadores integrados, soporta hasta 180kg');
 		ConnectOutWheel('#000000','<div class="subtitle-b"><b>Ruedas dinámicas auto ajustadas a la velocidad.</b></div>Llantas con sistema inteligente de soporte, nunca más te sorprenderá tener la llanta ponchada...');
