@@ -1,62 +1,4 @@
 
-.shadow2:hover {
-	-webkit-filter: drop-shadow(0 0 50px rgba(131, 186, 35, .9));
-	  filter: drop-shadow( 0 0 50px rgba(131, 186, 35, .9));
-}
-
-.chasis{
-	fill:#a8a9a8;
-	position: absolute;
-}.chasis2{
-	fill:#949594;
-	position: absolute;
-}
-
-
-.inwheel{
-	fill: #9dac6c;
-}.outwheel{
-	fill:#252524;
-}
-
-
-.handl1{
-	fill:#a8a9a8;
-	}.handl2{
-		fill:#949594;
-	}.handl3{
-		fill:#9dac6c;
-	}.handl4{
-		fill:#575955;
-	}.handl5{
-		fill:#252524;
-	}
-.handl22{
-fill:#252524;
-}
-
-.jog0{
-	fill:#949594
-}.jog1{
-	fill: #9dac6c;
-}.jog2{
-	fill: #575955;
-}.jog3{
-	fill:#252524;
-}.jog0:hover,.jog1:hover,.jog2:hover,.jog3:hover{
-	fill: blue;
-}
-
-
-.seat{
-	fill:#252524;
-}.seat:hover{
-	-moz-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	-webkit-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in; 
-}
-
 #svg-box-content-base {
     position: absolute;
     top: 0;
@@ -93,6 +35,7 @@ fill:#252524;
     padding-top: 45%; /* Aspect ratio */ 
     top: 0vh;
     position: relative;
+    opacity: 0.1;
 }.svg-box-content {
     position: absolute;
     top: 0;
@@ -109,6 +52,7 @@ fill:#252524;
 
 
 .databox{
+    height: 40vh;
 	left: 30vh;
 	-moz-transition: all 0.2s ease-in;
 	-o-transition: all 0.2s ease-in;

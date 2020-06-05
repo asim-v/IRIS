@@ -1635,9 +1635,26 @@ svg:hover path#path-1{
   width: 45%;
 }
 
+.xpandr{
+    background-color:  #1A1A1A;
+}
+@media only screen and (max-width:1190px){
+    .xpandr{
+        background-color:  #1A1A1A;
+        height: 150vh;
+    }
+}
+@media only screen and (max-width:500px){
+    .xpandr{
+        background-color:  #1A1A1A;
+        height: 160vh;
+    }
+}
+
+
 @media (max-width: 577px) {
   .main-logo {
-    padding:15vh 2vh;
+    padding:4vh 2vh;
 
   }
 }

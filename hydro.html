@@ -57,10 +57,10 @@
             Productos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#balam">Balam</a>
-            <a class="dropdown-item" href="#hydro">Hydro</a>
-            <a class="dropdown-item" href="#fireflies">Fireflies</a>
-            <a class="dropdown-item" href="#navek">Navek</a>
+            <a class="dropdown-item" href="balam.html">Balam</a>
+            <a class="dropdown-item" href="hydro.html">Hydro</a>
+            <a class="dropdown-item" href="fireflies/index.html">Fireflies</a>
+            <a class="dropdown-item" href="fireflies/index.html">Navek</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -75,9 +75,6 @@
             <a class="dropdown-item" href="maint.html#">Diseño y mantenimiento <br> de  maquinas</a>
           </div>
         </li>         
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="about.html">Acerca De</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href='#blog' href="blog-view.html">Blog</a>
           </li>   
@@ -951,29 +948,8 @@
 <div class="sect-pt2">
 
   <div class="container-fluid">
-    <div class="row sect-pt4">
-      <div class="col-lg-1"></div>
-      <div class="col-lg" style="height: 30vh;">
 
-	      <div class="col-md-9 centerr">
-	        <div class="row h-50"></div>
-	        <div class="row h-50">
-	          <div class="col-lg-1"></div><div class="col-lg">
-	            <div class="subtitle-b">
-	              <b>Lorem ipsum dolor sit amet</b><br>
-	              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-	            </div>
-	          </div><div class="col-lg-1"></div>
-	        </div>
-	        <div class="row h-25"></div>
-	      </div>    
-	      <div class="col-md-3">   	
-	      	
-      	  </div>
-
-      </div>  
-    </div>
-    <div class="row" id="A">
+    <div class="row" id="A" style="padding-top: 10vh;">
       <div class="col-lg">
         <img src="img/chasiss.png" class="hydro">
       </div>  
@@ -991,7 +967,7 @@
       </div>      
     </div>    
     <div class="row" id="B">
-      <div class="col-lg-5">
+      <div class="col-lg-7">
         <div class="row h-25"></div>
         <div class="row h-25">
           <div class="col-lg-1"></div><div class="col-lg">
@@ -1013,6 +989,100 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="js/waves.js"></script>
 
 
+    
+    
+    
+<div class="sect" style="height: 50vh;">
+    <div class="row sect-pt4">
+      <div class="col-lg-1"></div>
+      <div class="col-lg" style="height: 30vh;">
+
+	      <div class="col-md-9 centerr">
+	        <div class="row h-50"></div>
+	        <div class="row h-50">
+	          <div class="col-lg-1"></div><div class="col-lg">
+	            <div class="subtitle-b">
+                    <style>
+                    form{
+                      position: relative;
+                      display: block;
+                      height: 70px;
+                      border-radius: 35px;
+                      background: white;
+                      margin: 0 auto;
+                      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+                      overflow: hidden;
+                    }
+                    form input {
+                      line-height: 70px;
+                      padding: 0;
+                      border: none;
+                      outline: none;
+                      font-size: 1rem;
+                      font-weight: 300;
+                      background: #eee;
+                      letter-spacing: 0.02em;
+                      font-family: montserrat;
+                    }
+                    form input:not([type=submit]) {
+                      width: 100%;
+                      display: block;
+                      padding: 0 150px 0 30px;
+                    }
+                    form input:not([type=email]) {
+                      position: absolute;
+                      height: 50px;
+                      line-height: 50px;
+                      top: 10px;
+                      right: 10px;
+                      border-radius: 25px;
+                      padding: 0 25px;
+                      background: #8be653;
+                      font-family: montserrat;
+                      color: white;
+                      cursor: pointer;
+                    }
+                    form input:not([type=email]):hover {
+                      background: #75d929;
+                      font-family:montserrat;
+                    }
+                    form input:focus {
+                      outline: none;
+                      background: white;
+                    }
+
+                    </style>                  
+                    
+                    
+                    <div class="container">
+                      <h1><strong>Quieres recibir notificaciones del desarrollo?</strong>Ingresa tu correo</h1>
+                        
+                      <form action="">
+                        <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" />
+                        <input type="submit" name="submit" value="Suscribir">
+                      </form>
+                        
+                        
+                    </div>
+                  
+                  
+                  
+	            </div>
+	          </div><div class="col-lg-1"></div>
+	        </div>
+	        <div class="row h-25"></div>
+	      </div>    
+	      <div class="col-md-3"></div>
+          
+
+      </div>  
+    </div>
+</div>
+    
+    
+    
+    
+    
 
   <section class="paralax-mf footer-paralax bg-image " style="background-color:#0f0f0f ">
     <div class="overlay-mf"></div>
@@ -1060,7 +1130,9 @@
   <script src="lib/typed/typed.min.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
-
+    <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
