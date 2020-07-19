@@ -1,3 +1,11 @@
+import { html, Component } from '../../../deps/react.js';
+import { Link } from '../../../deps/react-router-dom.js';
+import resolveAsset from '../../utils/resolveAsset.js';
+
+import  './css/style.css';
+
+let Index = () => html
+`
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -466,3 +474,6 @@ background: linear-gradient(90deg, rgba(255,21,126,1) 0%, rgba(255,21,21,1) 100%
             </footer>
         </div>
 </html>
+`
+
+export default Index;
