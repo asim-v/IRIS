@@ -2,7 +2,8 @@ import { html, Component } from '../../../deps/react.js';
 import { Link } from '../../../deps/react-router-dom.js';
 import resolveAsset from '../../utils/resolveAsset.js';
 
-import  './css/style.css';
+
+
 
 let Index = () => html
 `
@@ -11,38 +12,36 @@ let Index = () => html
         <meta charset="UTF-8" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
-        
-        <link rel="shortcut icon" href="img/favicon.png"/> 
 
         <title>IRIS tech.io</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-        <link rel="stylesheet" href="css/preloader.css" />
+        <link rel="stylesheet" href="/app/routes/IRIS/css/preloader.css" />
 
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="" name="keywords" />
         <meta content="" name="description" />
         
 
-        
-        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
         
-        <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-        <link href="lib/animate/animate.min.css" rel="stylesheet" />
-        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-        <link href="css/aos.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/fonts.css" />
-        <link rel="stylesheet" href="css/navstyle.css" />
-        <link rel="stylesheet" href="css/styles-all.css" />
+        <link href="/app/routes/IRIS/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        
+        <link href="/app/routes/IRIS/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="/app/routes/IRIS/lib/animate/animate.min.css" rel="stylesheet" />
+        <link href="/app/routes/IRIS/lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+        <link href="/app/routes/IRIS/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+        <link href="/app/routes/IRIS/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+        <link href="/app/routes/IRIS/css/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/app/routes/IRIS/css/fonts.css" />
+        <link rel="stylesheet" href="/app/routes/IRIS/css/navstyle.css" />
+        <link rel="stylesheet" href="/app/routes/IRIS/css/styles-all.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        <link href="css/social.css" rel="stylesheet" />
-        <script type="text/javascript" src="js/aos.js"></script>
+        <script type="text/javascript" src="/app/routes/IRIS/js/aos.js"></script>
 
         
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="/app/routes/IRIS/css/style.css" rel="stylesheet" />
         
     </head>
         
@@ -60,7 +59,7 @@ let Index = () => html
                 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
                     <div class="container">
                         <a class="navbar-brand js-scroll" href="index.html">
-                            <e class="a centerr el-sm"><img src="img/svg.svg" height="40px" />&nbsp;IRIS</e>
+                            <e class="a centerr el-sm"><img src="/app/routes/IRIS/img/svg.svg" height="40px" />&nbsp;IRIS</e>
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
                             <span></span>
@@ -125,7 +124,7 @@ let Index = () => html
                                         </div>
                                     </div>
                                     <div class="col-md-5 centerr el-sm col-md-push-5">
-                                        <img src="img/white.png" class="main-logo" />
+                                        <img src="/app/routes/IRIS/img/white.png" class="main-logo" />
                                     </div>
                                     <svg width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none" class="separator">
                                         <path d="M0 0 L50 90 L100 0 V100 H0" fill="#fff" />
@@ -136,13 +135,13 @@ let Index = () => html
                     </div>
                 </div>
 
-                <link rel="stylesheet" href="css/wtchstyle.css" />
+                <link rel="stylesheet" href="/app/routes/IRIS/css/wtchstyle.css" />
 
                 <script src="https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/build/three-min.js"></script>
                 <script src="https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/examples/js/SimplexNoise.js"></script>
                 <script src="https://jeromeetienne.github.io/threex.terrain/threex.terrain.js"></script>
 
-                <script src="js/partscript.js"></script>
+                <script src="/app/routes/IRIS/js/partscript.js"></script>
 
 
 
@@ -226,7 +225,7 @@ let Index = () => html
                                 <div class="col-sm-12">
                                     <div class="row">
                                         <div class="col-lg-6 col-xs-6 col-xs-push-6">
-                                            <img src="img/balamo.png" width="100%" />
+                                            <img src="/app/routes/IRIS/img/balamo.png" width="100%" />
                                         </div>
                                         <div class="col-lg-6 col-xs-1" align="right">
                                             <div class="row h-25">
@@ -270,7 +269,7 @@ let Index = () => html
                 </script>
                 <section class="about-mf route">
                     <div class="container-fluid relative">
-                        <div class="row" style="background-image: url('img/wire.jpeg');">
+                        <div class="row" style="background-image: url('/app/routes/IRIS/img/wire.jpeg');">
                             <div class="container">
                                 <div class="col-sm-12">
                                     <div class="row" style="margin-top: 5%; margin-bottom: 10%;">
@@ -295,7 +294,7 @@ let Index = () => html
                                         </div>
                                         <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
                                             <div class="col-lg offset-md-1">
-                                                <img src="img/img1.png" class="bike" />
+                                                <img src="/app/routes/IRIS/img/img1.png" class="bike" />
                                             </div>
                                         </div>
                                     </div>
@@ -312,10 +311,10 @@ let Index = () => html
                                 <div class="container">
                                     <div class="row" style="margin-top: 10%;">
                                         <div class="col-lg-6 center-block text-center">
-                                            <div class="row-sm-1 h-50"><img src="img/helmet.png" data-aos="fade-down" data-aos-delay="150" width="70%" /></div>
+                                            <div class="row-sm-1 h-50"><img src="/app/routes/IRIS/img/helmet.png" data-aos="fade-down" data-aos-delay="150" width="70%" /></div>
                                             <div class="row-sm-1 h-50">
-                                                <e class="col-sm-1"><img src="img/glove.png" data-aos="fade-right" class="smaller" width="30%" /></e>
-                                                <e class="col-sm-1"><img src="img/firefly1.png" data-aos="fade-left" class="smaller" width="50%" /></e>
+                                                <e class="col-sm-1"><img src="/app/routes/IRIS/img/glove.png" data-aos="fade-right" class="smaller" width="30%" /></e>
+                                                <e class="col-sm-1"><img src="/app/routes/IRIS/img/firefly1.png" data-aos="fade-left" class="smaller" width="50%" /></e>
                                                 <section id="navek"></section>
                                             </div>
                                         </div>
@@ -349,10 +348,10 @@ let Index = () => html
                                 </div>
                             </div>
 
-                            <div class="row" class="navmap" style="background-image: url('img/illustration-map.png');">
+                            <div class="row" class="navmap" style="background-image: url('/app/routes/IRIS/img/illustration-map.png');">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg"><img src="img/navigation3.png" width="70%" class="img-fluid phone" alt="Responsive image" data-aos="fade-right" draggable="false" /></div>
+                                        <div class="col-lg"><img src="/app/routes/IRIS/img/navigation3.png" width="70%" class="img-fluid phone" alt="Responsive image" data-aos="fade-right" draggable="false" /></div>
                                         <div class="col-lg-6">
                                             <div class="row">
                                                 <div class="col-lg"></div>
@@ -447,22 +446,22 @@ background: linear-gradient(90deg, rgba(255,21,126,1) 0%, rgba(255,21,21,1) 100%
                 
 
 
-                <script src="lib/jquery/jquery.min.js"></script>
-                <script src="lib/jquery/jquery-migrate.min.js"></script>
-                <script src="lib/popper/popper.min.js"></script>
-                <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-                <script src="lib/easing/easing.min.js"></script>
-                <script src="lib/counterup/jquery.waypoints.min.js"></script>
-                <script src="lib/counterup/jquery.counterup.js"></script>
-                <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-                <script src="lib/lightbox/js/lightbox.min.js"></script>
-                <script src="lib/typed/typed.min.js"></script>
+                <script src="/app/routes/IRIS/lib/jquery/jquery.min.js"></script>
+                <script src="/app/routes/IRIS/lib/jquery/jquery-migrate.min.js"></script>
+                <script src="/app/routes/IRIS/lib/popper/popper.min.js"></script>
+                <script src="/app/routes/IRIS/lib/bootstrap/js/bootstrap.min.js"></script>
+                <script src="/app/routes/IRIS/lib/easing/easing.min.js"></script>
+                <script src="/app/routes/IRIS/lib/counterup/jquery.waypoints.min.js"></script>
+                <script src="/app/routes/IRIS/lib/counterup/jquery.counterup.js"></script>
+                <script src="/app/routes/IRIS/lib/owlcarousel/owl.carousel.min.js"></script>
+                <script src="/app/routes/IRIS/lib/lightbox/js/lightbox.min.js"></script>
+                <script src="/app/routes/IRIS/lib/typed/typed.min.js"></script>
                 
-                <script src="contactform/contactform.js"></script>
+                <script src="/app/routes/IRIS/contactform/contactform.js"></script>
 
                 
-                <script src="js/main.js"></script>
-                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script src="/app/routes/IRIS/js/main.js"></script>
+                <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
                 <script>
                     AOS.init();
                 </script>
@@ -470,7 +469,7 @@ background: linear-gradient(90deg, rgba(255,21,126,1) 0%, rgba(255,21,21,1) 100%
                 
                 <script src="https://codepen.io/_fbrz/pen/9a3e4ee2ef6dfd479ad33a2c85146fc1.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-                <script src="js/preloader.js"></script>
+                <script src="/app/routes/IRIS/js/preloader.js"></script>
             </footer>
         </div>
 </html>
