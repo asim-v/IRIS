@@ -9,32 +9,29 @@ let About = () => html`
         title="About"
         subtitle="React Drive CMS Demo"
         description="An easy way to publish articles directly from Google Drive"
-        sidebarImage=${resolveAsset('/assets/default-about.jpg')}
+        sidebarImage=${resolveAsset('/assets/giphy.gif')}
         showLinks=${true}
     >
         <div className=${css(styles.content)}>
             <img
-                src=${resolveAsset('/assets/react_logo.png')}
+                src=${resolveAsset('/assets/react-logo.jpg')}
                 className=${css(styles.image)}
+                style="width:40px;"
             />
             <div className=${css(styles.info)}>
-                <h1 className=${css(styles.title)}>React Drive CMS Demo</h1>
+                <h1 className=${css(styles.title)}>Acerca de</h1>
                 <p className=${css(styles.p)}>
-                    A demo site to showcase the use of Google Drive as a Content
-                    Management System. Write articles in Google Docs and publish
-                    them directly from there.
+                    IRIS tech.io es una empresa de investigación basada en México, CDMX. Nuestra misión es llevar al público la tecnología más avanzada y facilitar la integración de la ciencia en nuestras vidas diarias.
                 </p>
-                <p className=${css(styles.p)}>
-                    Google Drive is the backend, only a few static files are
-                    hosted on GitHub Pages, and the content is displayed with
-                    React JS.
+                <p className=${css(styles.p)}>Este es el sitio donde se muestra en progreso y el desarrollo pasado
+                    
                 </p>
             </div>
         </div>
 
         <footer className=${css(styles.footer)}>
             <${Link} to="/contact" className=${css(styles.contact)}>
-                Contact
+                Contacto
             <//>
         </footer>
     <//>
@@ -59,7 +56,7 @@ let styles = StyleSheet.create({
         fontSize: '3.8rem',
         fontWeight: 700,
         lineHeight: '1.1',
-        fontFamily: '"Source Sans Pro",Helvetica,Arial,sans-serif',
+        fontFamily: 'Montserrat',
     },
     p: {
         fontSize: '2rem',
@@ -71,7 +68,7 @@ let styles = StyleSheet.create({
         fontSize: '1.4rem',
         letterSpacing: '1px',
         fontWeight: 700,
-        fontFamily: '"Source Sans Pro",Helvetica,Arial,sans-serif',
+        fontFamily: 'Montserrat',
         textTransform: 'uppercase',
     },
     contact: {

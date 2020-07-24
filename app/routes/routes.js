@@ -6,16 +6,10 @@ import Category from './category.js'
 import About from './about.js'
 import Contact from './contact.js'
 import Home from './home.js'
-import Index from './IRIS/index.js'
 
 import NoMatch from '../modules/main/containers/noMatch.js'
 
 export default [
-    {
-        path: '/',
-        component: Index,
-        exact:true,
-    },
     {
         path: '/blog',
         component: Home,

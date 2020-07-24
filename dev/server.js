@@ -4,7 +4,12 @@ const fs = require('fs')
 const path = require('path')
 const port = process.argv[2] || 8080
 
+
 const index = fs.readFileSync(
+    path.join(process.cwd(), 'index.html'),
+    'utf8'
+)
+const blog = fs.readFileSync(
     path.join(process.cwd(), 'dev', 'index.html'),
     'utf8'
 )
@@ -16,11 +21,16 @@ const notFound = fs.readFileSync(
 http.createServer(function (req, res) {
     console.log(`${req.method} ${req.url}`)
 
-    if (req.url === '/' || req.url.startsWith('/?p=')) {
+    if (req.url === '/' || req.url === '/index' || req.url.startsWith('/?p=')) {
         res.statusCode = 200
         res.setHeader('Content-type', 'text/html')
         res.end(index)
         return
+    }else if (req.url === '/blog' || req.url.startsWith('/?p=')){
+        res.statusCode = 200
+        res.setHeader('Content-Type', 'text/html')
+        res.end(blog)
+        return 
     }
     // parse URL
     const parsedUrl = url.parse(req.url)

@@ -75,7 +75,6 @@
 	$(window).on('scroll', function () {
 		if( pixels =  document.getElementsByTagName('body')[0].clientHeight >  1000){pixels = 300}
 		else{var pixels =  document.getElementsByTagName('body')[0].clientHeight - 300}
-		console.log(pixels)
 		var top = 1200;
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-md').addClass('navbar-reduce');

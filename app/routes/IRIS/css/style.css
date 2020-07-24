@@ -1,9 +1,11 @@
 body {
   color: #4e4e4e;
   overflow-x: hidden;
+  
 }
 body,html{
   overflow-x: hidden;
+  overflow-y: inherit;
 }
 
 img,svg{

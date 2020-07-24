@@ -7,6 +7,7 @@ import resolveAsset from '../../utils/resolveAsset.js';
 
 let Index = () => html
 `
+
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -59,7 +60,7 @@ let Index = () => html
                 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
                     <div class="container">
                         <a class="navbar-brand js-scroll" href="index.html">
-                            <e class="a centerr el-sm"><img src="/app/routes/IRIS/img/svg.svg" height="40px" />&nbsp;IRIS</e>
+                            <e class="a centerr el-sm"><img src="/app/routes/IRIS/img/svg.svg" height="40px" /> IRIS Tech</e>
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
                             <span></span>
@@ -397,7 +398,7 @@ let Index = () => html
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="copyright-box">
-                                        <p class="copyright">&copy; Copyright <strong>IRISTECH</strong>. @2019</p>
+                                        <p class="copyright">Copyright <strong>IRISTECH</strong>. @2020</p>
                                         <a style="font-weight: lighter; color: white;" href="mailto:support@iristech.io?Subject=Support%20" target="_top">support@iristech.io</a><br />
                                         <a style="font-weight: lighter; color: white;" href="mailto:contact@iristech.io?Subject=Support%20" target="_top">contact@iristech.io</a><br />
                                         <u href="about.html">
@@ -436,6 +437,8 @@ let Index = () => html
                         </div>
                     </footer>
                 </section>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"/>
 
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
                 <a href="https://api.whatsapp.com/send?phone=5531359964&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20IRIS%202." class="float" target="_blank" style="background-color: background: rgb(255,21,126);

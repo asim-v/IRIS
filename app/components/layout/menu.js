@@ -43,6 +43,7 @@ class Menu extends Component {
                     <li className=${css(styles.item)}>
                         <i className=${'fas fa-home ' + css(styles.icon)} />
                         <${Link}
+                            onClick="window.location = '/'"
                             to="/"
                             title="Home"
                             className=${css(styles.itemLink)}
@@ -51,7 +52,7 @@ class Menu extends Component {
                         <//>
                     </li>                
                     <li className=${css(styles.item)}>
-                        <i className=${'fas fa-cogs ' + css(styles.icon)} />
+                        <i className=${'fas fa-code ' + css(styles.icon)} />
                         <${Link}
                             to="/blog"
                             title="Home"

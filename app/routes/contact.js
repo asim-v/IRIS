@@ -104,19 +104,19 @@ class Contact extends Component {
 
         return html`
             <${Page}
-                title="Contact"
-                subtitle="Get in touch with us"
+                title="Contacto"
+                subtitle="Ponte en contacto con nosotros con tu necesidad!"
                 description=""
-                sidebarImage=${resolveAsset('/assets/default-contact.jpg')}
+                sidebarImage=${resolveAsset('/assets/background.jpg')}
             >
-                <h3 className=${css(styles.title)}>Send me an email</h3>
+                <h3 className=${css(styles.title)}>Agrega Tu Mensaje</h3>
                 <form className=${css(styles.form)}>
                     <div>
                         <label
                             for="name"
                             className=${css(styles.label, styles.required)}
                         >
-                            Your name
+                            Tu nombre
                         </label>
                         ${name.error &&
                         html`
@@ -140,7 +140,7 @@ class Contact extends Component {
                             for="email"
                             className=${css(styles.label, styles.required)}
                         >
-                            Your email
+                            Tu e-mail
                         </label>
                         ${email.error &&
                         html`
@@ -151,7 +151,7 @@ class Contact extends Component {
                         <${BaseInput}
                             value=${email.value}
                             name="email"
-                            placeholder="example@mail.com"
+                            placeholder="ejemplo@mail.com"
                             type="email"
                             onInput=${this.updateFormProperty}
                             className=${css(
@@ -162,7 +162,7 @@ class Contact extends Component {
                     </div>
                     <div>
                         <label for="company" className=${css(styles.label)}>
-                            Company
+                            Tu Institución
                         </label>
                         ${company.error &&
                         html`
@@ -183,7 +183,7 @@ class Contact extends Component {
                     </div>
                     <div>
                         <label for="phone" className=${css(styles.label)}>
-                            Phone number
+                            Número de teléfono
                         </label>
                         ${phone.error &&
                         html`
@@ -207,7 +207,7 @@ class Contact extends Component {
                             for="message"
                             className=${css(styles.label, styles.required)}
                         >
-                            Your message
+                            Tu Mensaje
                         </label>
                         ${message.error &&
                         html`
@@ -233,7 +233,7 @@ class Contact extends Component {
                               className=${css(buttons.base, styles.button)}
                               onClick=${this.sendMessage}
                           >
-                              Send Message
+                              Enviar Mensaje    
                           </button>`
                         : html` <button
                               className=${css(
@@ -242,12 +242,12 @@ class Contact extends Component {
                                   styles.button
                               )}
                           >
-                              ${sent ? 'Message sent !' : 'Form incomplete'}
+                              ${sent ? 'Mensaje Enviado !' : 'Formulario Incompleto'}
                           </button>`}
                 </form>
                 <footer className=${css(styles.footer)}>
                     <${Link} to="/about" className=${css(styles.contact)}>
-                        About
+                        Acerca de
                     <//>
                 </footer>
             <//>
@@ -271,7 +271,7 @@ let styles = StyleSheet.create({
     title: {
         fontSize: '2.6rem',
         marginTop: '20px',
-        fontFamily: 'inherit',
+        fontFamily: 'Montserrat',
         fontWeight: 500,
         lineHeight: '1.1',
         color: 'inherit',
@@ -280,12 +280,12 @@ let styles = StyleSheet.create({
 
     label: {
         fontSize: '2rem',
-        fontFamily: '"Source Sans Pro",Helvetica,Arial,sans-serif',
+        fontFamily: 'Montserrat',
         fontWeight: 700,
         margin: '15px 0 0',
     },
     button: {
-        fontFamily: '"Source Sans Pro",Helvetica,Arial,sans-serif',
+        fontFamily: 'Montserrat',
     },
     error: {
         color: 'red',
@@ -301,7 +301,7 @@ let styles = StyleSheet.create({
         fontSize: '1.4rem',
         letterSpacing: '1px',
         fontWeight: 700,
-        fontFamily: '"Source Sans Pro",Helvetica,Arial,sans-serif',
+        fontFamily: 'Montserrat',
         textTransform: 'uppercase',
     },
     contact: {
@@ -321,5 +321,10 @@ let styles = StyleSheet.create({
     },
     form: {
         marginBottom: '5rem',
+      
+    },
+    button:{
+        backgroundColor: "#9500ff",
+        borderRadius:"30px",
     },
 })
