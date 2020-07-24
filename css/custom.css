@@ -7,12 +7,22 @@ body {
   width: 100%;
   height: 100vh;
  
-  background: #d4d6d6;
-  background-image: linear-gradient(rgba(252, 252, 252, .7) .1em, transparent .1em), linear-gradient(90deg, rgba(252, 252, 252, .7) .1em, transparent .1em);
+  background: #fff;
+  background-image: linear-gradient(rgba(250, 250, 250, 1) .1em, transparent .1em), linear-gradient(90deg, rgba(250, 250, 250, 1) .1em, transparent .1em);
   background-size: 3em 3em;
 }
 html{
   overflow-y: hidden;
+}
+span{
+  color: #ffdd00!important;
+}
+.button{
+  border-radius: 5em !important;
+}
+.positive{
+  background-color: #03fcb1 !important;
+  color: #2B2B2B !important;
 }
 .imgLoader {
   display: none;
@@ -24,6 +34,16 @@ html{
   color: orange;
 }
 
+.accordion{
+  border:none !important;
+  -webkit-box-shadow: 5px 5px 10px  lightgrey !important;
+  box-shadow: 5px 5px 10px lightgrey !important;
+}
+.ui.segment {
+  border:none !important;
+  -webkit-box-shadow: 5px 5px 10px  lightgrey !important;
+  box-shadow: 5px 5px 10px lightgrey !important;
+}
 .ui.items .item.active {
   border: 3px solid red;
 }

@@ -16,7 +16,10 @@ img,svg{
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-
+.yellow{
+  color: #2B2B2B !important;
+  background-color: #f0f094 !important;
+}
 .pill{
     background-color:white;
     padding: 5px 10px;
@@ -1166,9 +1169,11 @@ footer .credits a {
 }
 
 .button-big {
-  padding: 1.1rem 5rem;
+  
+  padding: 0.85rem 4.25rem;
   font-size: 1.5rem;
   border-radius: 5rem;  
+  bottom:10px;
   font-family: "montserrat-light", bold;
   font-weight: bold;
 }
@@ -1702,7 +1707,7 @@ svg:hover path#path-1{
 .table-fill {
   font-family: "montserrat-regular",sans-serif;
   background: white;
-  border-radius:15px;
+  border-radius:15px !important;
   border-collapse: collapse;
   height: 10px;
   margin: auto;
@@ -1716,7 +1721,6 @@ svg:hover path#path-1{
 th {
   border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
-  font-size:23px;
   font-weight: 100;
   padding:10px;
   text-align:left;
@@ -1724,14 +1728,10 @@ th {
   vertical-align:middle;
 }
 
-th:first-child {
-  border-top-left-radius:15px;
-}
- 
-th:last-child {
-  border-top-right-radius:15px;
-}
-  
+
+/**/
+
+
 tr {
   border-top: 1px solid #C1C3D1;
   border-bottom-: 1px solid #C1C3D1;
@@ -1754,7 +1754,7 @@ tr:first-child {
 tr:last-child {
   border-bottom:none;
 }
- 
+/* 
 tr:nth-child(odd) td {
   background:#EBEBEB;
 }
@@ -1762,7 +1762,7 @@ tr:nth-child(odd) td {
 tr:nth-child(odd):hover td {
   background:#4E5066;
 }
-
+*/
 tr:last-child td:first-child {
   border-bottom-left-radius:3px;
 }
