@@ -7,9 +7,10 @@
   <meta content center="" name="keywords">
   <meta content center="" name="description">
 
-  <!-- Favicons -->
+  <!-- Inconsolata -->
   <link rel="shortcut icon" href="img/favicon.png"/> 
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +24,7 @@
   <link href="css/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/navstyle.css">
+
 
   <script type="text/javascript" src="js/aos.js"></script>
   <link rel="stylesheet" href="css/wtchstyle.css">
@@ -135,16 +137,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <!-- partial:index.partial.html -->
 <div class="ui grid subtitle-c" style="font-weight: bolder;padding-top: 10vh;">
   <div class="four wide column">
@@ -161,6 +153,81 @@
             Modelos
           </div>
         </a>
+      </div>      
+      <div class="title">
+        <i class="dropdown icon"></i>
+        <i class="pencil icon"></i>
+        Especificaciones de medida
+      </div>
+      <div class="content ">
+        <div class="ui form">
+          <div class="field  center">
+            <label>Conoces el BDC de tu disco? Cuál es?</label>
+            <div class="ui labeled input">
+              <input placeholder="Text" type="text" id="in1">
+            </div>
+          </div>
+          <div class="field  center">
+            <label>Numero de tornillos</label>
+            <div class="ui labeled input">
+              <input placeholder="Text" type="text" id="in2">
+            </div>
+          </div>
+          <div class="field  center">
+            <label>Qué tal ovalado lo necesitas? Ej. (10%,20%,30%)</label>
+            <div class="ui labeled input">
+              <input placeholder="Text" type="text" id="in3">
+            </div>
+          </div>
+          <div class="field  center">
+            <label>Numero de Dientes</label>
+            <div class="ui labeled input">
+              <input placeholder="Text" type="text" id="in4">
+            </div>
+          </div>
+          <div class="field  center">
+            <label>Qué tal ovalado lo necesitas?:</label>
+            <div class="ui labeled input">
+              <input placeholder="Text" type="text" id="in5">
+            </div>
+          </div>          
+
+          <div class="field">
+            <label class="center">Marca de Biela</label>
+            <div class="ui selection dropdown fluid">
+              <input name="color" type="hidden" id="in6" value="red">
+              <div class="default text">Elegir</div>
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item" data-value="shimano">Shimano</div>
+                <div class="item" data-value="benotto">Benotto</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="center">Pintura <div class="pill" style="background-color:rgb(255,21,126);color:white;text-align: center;max-width: 100px;display: inline;">Gratis!</div></label>
+            <div class="ui selection dropdown fluid">
+              <input name="color" type="hidden" id="in7" value="red">
+              <div class="default text">Elegir</div>
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item" data-value="black">Negro</div>
+                <div class="item" data-value="white">Blanco</div>
+                <div class="item" data-value="red">Rojo</div>
+                <div class="item" data-value="positive">Verde</div>
+                <div class="item" data-value="blue">Amarillo</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" id="saveConfig">
+            <div class="ui positive button center" style="background-color: #03fcb1 !important" id="saveButton">
+              <i class="add sign icon"></i>
+              Guardar
+            </div>
+          </a>
+        </div><!-- form -->
       </div>      
       <div class="title">
         <i class="dropdown icon"></i>
@@ -182,14 +249,30 @@
             <div class="ui selection dropdown fluid">
               <input name="gender" type="hidden" id="inputFont" value="Arial">
               <div class="default text">Arial</div>
-              <i class="dropdown icon"></i>
-              <div class="dropdown menu">
-                <div class="item" data-value="Arial">Arial</div>
-                <div class="item" data-value="Impact">Impact</div>
-                <div class="item" data-value="Lobster">Lobster</div>
-                <div class="item" data-value="Indie Flower">Indie Flower</div>
-                <div class="item" data-value="Gloria Hallelujah">Gloria Hallelujah</div>
-              </div>
+              <i class="dropdown icon"></i>              
+              
+              <div class="dropdown menu" id="font-dropdown">
+                <!-- for each font,create selection element -->  
+                
+                <!-- Example -->              
+                <!-- <div class="item" data-value="font-name" style="font-family:font-name">Arial</div> -->
+              </div>              
+              <script type="text/javascript">
+                var head = document.getElementsByTagName('HEAD')[0]; 
+                dropdown = document.getElementById("font-dropdown")
+                var FontList = ["Recursive","Arial","Roboto","Lexend","Zetta","Inconsolata","Staatliches","One","Fredoka","Fredoka One","Righteous","Balsamiq","Suwannaphum","Homemade Apple","Mansalva","Gochi Hand",'Allura','Shadows Into Light Two','Audiowide','Covered By Your Grace','DM Mono','Share Tech Mono','Schoolbell','Faster One','Koulen','UnifrakturCook','New Rocker','Charmonman','Caesar Dress','Single Day','Freehand']
+                for (var i = FontList.length - 1; i >= 0; i--) {
+
+                  element = document.createElement("div");
+                  element.classList.add("item");
+                  element.setAttribute("data-value",FontList[i]);
+                  element.style.fontFamily = FontList[i];
+                  element.innerHTML =  FontList[i];
+                  dropdown.appendChild(element);
+                }
+              </script>
+
+
             </div>                          
           </div>
             
@@ -242,7 +325,7 @@
       <div class="title ">
         <i class="dropdown icon"></i>
         <i class="icon settings"></i>
-        Opciones
+        Configuracion
       </div>
       <div class="content center"><br>
         <a href="#" id="resetButton">
@@ -264,7 +347,7 @@
 
     <div id="boxEdit">
       <div class="ui top tertiary inverted attached segment" style="background-color: #ffc800  !important;color:#2B2B2B">
-        <p>Editar</p>
+        <p>Personalización de Crankset Balam™</p>
       </div>
       <div class="ui bottom attached segment">
         <p>Selecciona objeto para editar o agrega nuevo con el menu izquierdo.</p>
@@ -283,7 +366,7 @@
                 <input placeholder="Text" type="text" id="editText">
               </div>
             </div>
-
+<!-- 
             <div class="field">
               <label>Fuente</label>
               <div class="ui selection dropdown fluid" id="uiEditFont">
@@ -299,7 +382,38 @@
                 </div>
               </div>
             </div>
+ -->
+          <div class="field">
+            <label >Fuente</label>
 
+            <div class="ui selection dropdown fluid" id="uiEditFont">
+              <input name="gender" type="hidden"  id="editFont">
+              <div class="default text">Seleccionar</div>
+              <i class="dropdown icon"></i>
+
+              <!-- Example -->              
+              <!-- <div class="item" data-value="font-name" style="font-family:font-name">Arial</div> -->
+
+              <!-- for each font,create selection element -->
+              <div class="menu" id="font-dropdown-edit"></div>              
+              <script type="text/javascript">
+                var head = document.getElementsByTagName('HEAD')[0]; 
+                dropdown = document.getElementById("font-dropdown-edit")
+                var FontList = ["Recursive","Arial","Roboto","Lexend","Zetta","Inconsolata","Staatliches","One","Fredoka","Fredoka One","Righteous","Balsamiq","Suwannaphum","Homemade Apple","Mansalva","Gochi Hand",'Allura','Shadows Into Light Two','Audiowide','Covered By Your Grace','DM Mono','Share Tech Mono','Schoolbell','Faster One','Koulen','UnifrakturCook','New Rocker','Charmonman','Caesar Dress','Single Day','Freehand']
+                for (var i = FontList.length - 1; i >= 0; i--) {
+
+                  element = document.createElement("div");
+                  element.classList.add("item");
+                  element.setAttribute("data-value",FontList[i]);
+                  element.style.fontFamily = FontList[i];
+                  element.innerHTML =  FontList[i];
+                  dropdown.appendChild(element);
+                }
+              </script>
+
+
+            </div>                          
+          </div>
             <!--<div class="field">
               <label>Size</label>
               <input placeholder="14" value="14" type="text" id="editSize">
@@ -311,14 +425,14 @@
                 <input name="gender" type="hidden" id="editColor">
                 <div class="default text">Rojo</div>
                 <i class="dropdown icon"></i>
-                <div class="menu">
-                  <div class="item" data-value="black">Negro</div>
-                  <div class="item" data-value="white">Blanco</div>
-                  <div class="item" data-value="red">Rojo</div>
-                  <div class="item" data-value="positive">Naranja</div>
-                  <div class="item" data-value="blue">Azul</div>
-                  <div class="item" data-value="green">Verde</div>
-                  <div class="item" data-value="aqua">Aqua</div>
+                <div class="menu" >
+                  <div style="color: #fff;background-color:#2B2B2B " class="item" data-value="black" >Negro</div>
+                  <div style="color: #fff;background-color:#2B2B2B " class="item" data-value="white">Blanco</div>
+                  <div style="color: #fff;background-color:#2B2B2B " class="item" data-value="red">Rojo</div>
+                  <div style="color: #fff;background-color:#2B2B2B " class="item" data-value="positive">Naranja</div>
+                  <div style="color: #fff;background-color:#2B2B2B " class="item" data-value="blue">Azul</div>
+                  <div style="color: #fff;background-color:#2B2B2B " class="item" data-value="green">Verde</div>
+                  <div style="color: #fff;background-color:#2B2B2B " class="item" data-value="aqua">Aqua</div>
                 </div>
               </div>
             </div>

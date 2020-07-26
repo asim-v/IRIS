@@ -143,23 +143,56 @@ $(document).ready(function() {
     ctx.clip();*/
     // END Clip Area
   });
-  
+  $('#saveConfig').on('click', function() {
+
+
+
+    var in1 = $('#in1').val();
+    var in2 = $('#in2').val();
+    var in3 = $('#in3').val();
+    var in4 = $('#in4').val();
+    var in5 = $('#in5').val();
+    var in6 = $('#in6').val();
+    var in7 = $('#in7').val();
+    
+    if(in1.trim() === '' || in2.trim() === '' || in3.trim() === '' || in4.trim() === '' || in5.trim() === '' || in6.trim() === '' || in7.trim() === '' ) {
+      alert('Favor de llenar los campos');
+      return;
+    }
+
+    $("#saveButton").html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Guardando ...');
+    setTimeout(() => {  
+
+      // Update Edit Text
+      $('#in1').val( in1);
+      $('#in2').val( in2);
+      $('#in3').val( in3);
+      $('#in4').val( in4);
+      $('#in5').val( in5);
+      $('#in6').val( in6);
+      $('#in7').val( in7);
+      $("#saveButton").html('Guardado!');
+
+    }, 100);  
+  });
+
   $('#addTextButton').on('click', function() {
     var inText = $('#inputText').val();
     
     if(inText.trim() === '') {
-      alert('Please type text');
+      alert('Favor de llenar los campos');
       return;
     }
     
     var inFont = $('#inputFont').val();
-    var inSize = 14;
+    var inSize = 25;
     var inColor = $('#inputColor').val();
     
     var newText = new fabric.Text(inText, {
-            right: 0,
-            left: -10,
-            top: -10,
+            fontFamily: inFont,
+            right: 10,
+            left: 0,
+            top: 0,
             angle: 0,
             // width:620,
             // height:500,
@@ -197,7 +230,7 @@ $(document).ready(function() {
     }
     
     var inFont = $('#editFont').val();
-    var inSize = 14;
+    var inSize = 25;
     var inColor = $('#editColor').val();
     
     var TexttoEdit = canvas.getActiveObject();
@@ -221,7 +254,7 @@ $(document).ready(function() {
     // Check file extensions
     var fileExt = $('#imgLoader').val().split('.').pop().toLowerCase();
     if($.inArray(fileExt, ['png','jpg','jpeg']) == -1) {
-        alert('You cannot upload this file. Please upload only .png, .jpg, or .jpeg images.');
+        alert('No puedes subir este archivo. Favor de subir solamente .png, .jpg, o imagenes jpeg.');
         $('#file').val("");
         return false;
     }
@@ -266,7 +299,27 @@ $(document).ready(function() {
     }
     reader.readAsDataURL(e.target.files[0]);
   }
-  
+
+  // Escucha si apreita el elimina
+  window.addEventListener("keydown", () => {
+
+    if([46,8].includes(event.keyCode)){
+
+      var obJ = canvas.getActiveObject();
+      updatePrice("-"+String(obJ.itemPrice))
+      updatePrice(+Math.abs(obJ.itemPrice))
+
+      // Remove from item_list
+      var obJindex = item_list.indexOf(obJ);
+      if (obJindex > -1) {
+          item_list.splice(obJindex, 1);
+      }
+    
+      // Remove from canvas
+      obJ.remove();
+      clearSelection();
+    }
+  });
   $('.trashButton').on('click', function() {
     $('#modalDelete').modal('setting', {
       onDeny    : function(){
@@ -318,4 +371,6 @@ $(document).ready(function() {
 
   });
   
+
+
 });

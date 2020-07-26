@@ -1,3 +1,41 @@
+/*CUSTOM FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suwannaphum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+  
+/*CUSTOM FONTS*/
+
+
+
+
 body {
   font-family: sans-serif;
   overflow-y: hidden;
@@ -61,3 +99,4 @@ span{
 .transparent{
 	background-color: rgba(200,0,0,.1);
 }
+
