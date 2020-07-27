@@ -11,7 +11,8 @@ const GoogleSpreadsheet = require('google-spreadsheet')
 const {promisify} = require('util')
 const creds = require('./client-secret.json')
 
-async function readSpread(){
+
+const getSpread = async () => {
     const doc = new GoogleSpreadsheet('1c1fxMn4VXgDIgU_DUbTN2Z2ZHhzhpZtyNpaHTjZ5rdQ')
     await promisify(doc.useServiceAccountAuth)(creds)
     const info = await promisify(doc.getInfo)()
@@ -20,9 +21,11 @@ async function readSpread(){
     const rows = await promisify(sheet.getRows)({
         offset:1
     })
-    return "done"
+    console.log(rows)
+    return rows
 }
-console.log(readSpread().then())
+console.log(getSpread())
+
 
 const index = fs.readFileSync(
     path.join(process.cwd(), 'index.html'),

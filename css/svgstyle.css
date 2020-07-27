@@ -32,10 +32,11 @@
 
 .svg-box {
     width: 120%;
-    padding-top: 45%; /* Aspect ratio */ 
+    padding-top: 50%; /* Aspect ratio */ 
     top: 0vh;
+    left: 8px;
     position: relative;
-    opacity: 0.1;
+    opacity: 0.25;
 }.svg-box-content {
     position: absolute;
     top: 0;
