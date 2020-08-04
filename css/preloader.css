@@ -23,7 +23,7 @@
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #16a085;
+  border-top-color:  rgba(255,21,21,1);
   -webkit-animation: spin 1.7s linear infinite;
           animation: spin 1.7s linear infinite;
   z-index: 11;

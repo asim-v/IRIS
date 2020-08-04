@@ -11,21 +11,21 @@ const GoogleSpreadsheet = require('google-spreadsheet')
 const {promisify} = require('util')
 const creds = require('./client-secret.json')
 
+const doc = new GoogleSpreadsheet('1c1fxMn4VXgDIgU_DUbTN2Z2ZHhzhpZtyNpaHTjZ5rdQ')
 
-const getSpread = async () => {
-    const doc = new GoogleSpreadsheet('1c1fxMn4VXgDIgU_DUbTN2Z2ZHhzhpZtyNpaHTjZ5rdQ')
+const getInicio = async () => {
     await promisify(doc.useServiceAccountAuth)(creds)
     const info = await promisify(doc.getInfo)()
-    const sheet = info.worksheets[0]
-    
+    const sheet = info.worksheets[0]    
     const rows = await promisify(sheet.getRows)({
         offset:1
     })
-    console.log(rows)
-    return rows
+    for (var i = rows.length - 1; i >= 0; i--) {
+        if (rows[i].sitioweb == 'INICIO') {
+            result = rows[i]}
+    }
+    return result
 }
-console.log(getSpread())
-
 
 const index = fs.readFileSync(
     path.join(process.cwd(), 'index.html'),
@@ -47,19 +47,19 @@ const notFound = fs.readFileSync(
 http.createServer(function (req, res) {
     console.log(`${req.method} ${req.url}`)
 
-    // const discos = readSpread()
-    // console.log(discos)
-
     if (req.url === '/' || req.url === '/index' ) {
         res.statusCode = 200
         res.setHeader('Content-type', 'text/html')
+
+        const inicio = getInicio()
+        res.write(`<meta id="data"> ${inicio} </meta>`)
         res.end(index)
         return
     }else if (req.url === '/personalizar'){
         res.statusCode = 200
         res.setHeader('Content-Type', 'text/html')
         res.write(custom)
-        // res.write(`<meta id="data"> ${discos} </meta>`)
+        
         res.end()
         return 
     }else if (req.url === '/blog' || req.url.startsWith('/?p=')){

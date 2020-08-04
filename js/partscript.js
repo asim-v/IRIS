@@ -10,7 +10,7 @@ renderer.setClearColor(0x000000, 0);
 	var camera	= new THREE.PerspectiveCamera(25, window.innerWidth /    window.innerHeight, 0.01, 1000);
 /* Play around with camera positioning */
 	camera.position.z = 15; 
-  camera.position.y = 0;
+  	camera.position.y = 0;
 /* Fog provides depth to the landscape*/
   scene.fog = new THREE.Fog(0x000, 0, 45);
 	;(function(){
@@ -41,7 +41,20 @@ renderer.setClearColor(0x000000, 0);
 	mesh.scale.multiplyScalar(10);
 /* Play around with the camera */
 	onRenderFcts.push(function(delta, now){
-		mesh.rotation.z += 0.04 * delta;	
+		
+		mesh.rotation.z += 0.0003
+		onmousemove = function(e){
+			// console.log("mouse location:", e.clientX, e.clientY);
+			totalX = $(window).width();
+			totalY = $(window).height();
+			propx = ((e.clientX * 100)/totalX)/300;
+			propy = ((e.clientY * 100)/totalY)/200;
+			
+			mesh.rotation.z = propx;
+			mesh.rotation.y = propy;	
+		}
+
+
 	})
 	onRenderFcts.push(function(){
 		renderer.render( scene, camera );		

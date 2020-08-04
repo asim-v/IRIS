@@ -40,7 +40,7 @@
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="index.html">
-       <e class="a centerr el-sm"><img src="img/favicon.png" height="40px">&nbsp;IRIS Tech</e></a>
+       <e class="a centerr el-sm"><img src="img/favicon.png" height="40px">&nbsp;IRIS Tech<l style="font-size: 20px;font-">.io</l></e></a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
@@ -54,10 +54,10 @@
             Productos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#balam">Balam</a>
-            <a class="dropdown-item" href="#hydro">Hydro</a>
-            <a class="dropdown-item" href="#fireflies">Fireflies</a>
-            <a class="dropdown-item" href="#navek">Navek</a>
+            <a class="dropdown-item" href="balam.html">Balam</a>
+            <a class="dropdown-item" href="hydro.html">Hydro</a>
+            <a class="dropdown-item" href="/fireflies">Fireflies</a>
+            <a class="dropdown-item" href="/fireflies">Navek</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -72,9 +72,10 @@
             <a class="dropdown-item" href="maint.html#">Diseño y mantenimiento <br> de  maquinas</a>
           </div>
         </li>         
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="blog-view.html">Blog</a>
-          </li>   
+        <li class="nav-item">
+            <style type="text/css">nav ul li  a:hover{background:none;}</style>
+            <a class="button js-scroll " href="/blog" role="button" style="border-radius: 30px;padding: 3px 15px">Desarrollo</a>
+        </li> 
           <!--/
           <li class="nav-item">
             <a class="button js-scroll px-4" href="#about" role="button">Tienda</a>
@@ -90,7 +91,7 @@
 
 <div id="about"></div>
   <!--/ Intro Skew Star /-->
-  <div class="intro intro-single route bg-image" style="background-image: url(img/piezo.jpg)" id="#about">
+  <div class="intro intro-single route bg-image" style="background-image: url('https://i.giphy.com/media/ZZl8MetzKTl5tLGEUI/giphy.webp')" id="#about">
     <div class="overlay-mf"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
@@ -239,7 +240,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 ">
+
+
+
+        <div class="col-md-4 "> <!-- INICIO DE BLOQUE -->
           <div class="service-box">
             <div class="service-ico">
               <img class="img-fluid" src="img/RAY.jpg">
@@ -254,23 +258,10 @@
               </p>              
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="service-box">
-            <div class="service-ico">
-              <img class="img-fluid" src="img/em3.jpg">
-            </div>
-            <div class="service-content">
-              <h2 class="s-title"><b style="font-family: 'montserrat-regular', light;">Emilio Bazán</b></h2>
-              <p class="s-description text-center">
-                <b> CTO </b>
-              </p>
-              <p class="s-description text-center">
-                <a href="https://www.linkedin.com/in/javier-emilio-baz%C3%A1n-sanchez-910441179/"><span class="comit"><i class="ion-social-linkedin"></i></span></a>
-              </p>
-            </div>
-          </div>
-        </div>
+        </div> <!-- FIN DE BLOQUE -->
+
+
+
       </div>
     </div>
   </section>
@@ -283,7 +274,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
+            <div id="contact" class="box-shadow-full" style="box-shadow: none">
               <div class="row">
                 <div class="col-md-6">
                   <div class="title-box-2">
@@ -324,7 +315,7 @@
                     <br>
                     <div id="success"></div>
                     <div class="form-group">
-                    <button type="submit" class="btn btn-primary button button-a button-big button-rouded" id="sendMessageButton">Send</button>
+                    <button type="submit" class="btn btn-primary button button-a button-big button-rouded" id="sendMessageButton">Enviar</button>
                     </div>
                   </form>
                   </div>
@@ -351,8 +342,8 @@
                     <ul>
                       <li><a href="https://www.facebook.com/IRISTechMX/"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
                       <li><a href="https://www.instagram.com/iristechmx/?hl=es"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                      <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-codepen"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -362,19 +353,6 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="copyright-box">
-              <p class="copyright">&copy; Copyright <strong>IRIS Tech</strong>. Todos los derechos reservados.</p>
-              <div class="credits">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </section>
   <!--/ Section Contact-footer End /-->
   <section class="paralax-mf footer-paralax bg-image route" style="background-color:#0f0f0f ">
