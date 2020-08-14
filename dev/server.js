@@ -7,25 +7,25 @@ const port = process.argv[2] || 8080
 
 
 
-const GoogleSpreadsheet = require('google-spreadsheet')
-const {promisify} = require('util')
-const creds = require('./client-secret.json')
+// const GoogleSpreadsheet = require('google-spreadsheet')
+// const {promisify} = require('util')
+// const creds = require('./client-secret.json')
 
-const doc = new GoogleSpreadsheet('1c1fxMn4VXgDIgU_DUbTN2Z2ZHhzhpZtyNpaHTjZ5rdQ')
+// const doc = new GoogleSpreadsheet('1c1fxMn4VXgDIgU_DUbTN2Z2ZHhzhpZtyNpaHTjZ5rdQ')
 
-const getInicio = async () => {
-    await promisify(doc.useServiceAccountAuth)(creds)
-    const info = await promisify(doc.getInfo)()
-    const sheet = info.worksheets[0]    
-    const rows = await promisify(sheet.getRows)({
-        offset:1
-    })
-    for (var i = rows.length - 1; i >= 0; i--) {
-        if (rows[i].sitioweb == 'INICIO') {
-            result = rows[i]}
-    }
-    return result
-}
+// // const getInicio = async () => {
+// //     await promisify(doc.useServiceAccountAuth)(creds)
+// //     const info = await promisify(doc.getInfo)()
+// //     const sheet = info.worksheets[0]    
+// //     const rows = await promisify(sheet.getRows)({
+// //         offset:1
+// //     })
+// //     for (var i = rows.length - 1; i >= 0; i--) {
+// //         if (rows[i].sitioweb == 'INICIO') {
+// //             result = rows[i]}
+// //     }
+// //     return result
+// // }
 
 const index = fs.readFileSync(
     path.join(process.cwd(), 'index.html'),
@@ -51,8 +51,8 @@ http.createServer(function (req, res) {
         res.statusCode = 200
         res.setHeader('Content-type', 'text/html')
 
-        const inicio = getInicio()
-        res.write(`<meta id="data"> ${inicio} </meta>`)
+        // const inicio = getInicio()
+        // res.write(`<meta id="data"> ${inicio} </meta>`)
         res.end(index)
         return
     }else if (req.url === '/personalizar'){
