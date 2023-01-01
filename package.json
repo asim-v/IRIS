@@ -19,7 +19,7 @@
     "promisify": "0.0.3"
   },
   "devDependencies": {
-    "css-loader": "^3.6.0",
+    "css-loader": "^6.7.3",
     "prettier": "^2.0.5"
   }
 }
